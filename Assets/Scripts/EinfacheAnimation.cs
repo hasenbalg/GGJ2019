@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class WolkeGesichtAnimation : MonoBehaviour
+public class EinfacheAnimation : MonoBehaviour
 {
     private IEnumerator coroutine;
     public Texture[] textures;
     private int counter;
     private Renderer renderer;
+    public float interval = .5f;
 
     void Start()
     {
-        coroutine = ChangeSprite(2.0f);
+        coroutine = ChangeSprite(interval);
         counter = 0;
         StartCoroutine(coroutine);
         renderer = GetComponent<Renderer>();
