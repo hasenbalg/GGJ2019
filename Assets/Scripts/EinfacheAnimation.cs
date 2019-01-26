@@ -6,7 +6,7 @@ public class EinfacheAnimation : MonoBehaviour
     private IEnumerator coroutine;
     public Texture[] textures;
     private int counter;
-    private Renderer renderer;
+    private Renderer mRenderer;
     public float interval = .5f;
 
     void Start()
@@ -14,7 +14,7 @@ public class EinfacheAnimation : MonoBehaviour
         coroutine = ChangeSprite(interval);
         counter = 0;
         StartCoroutine(coroutine);
-        renderer = GetComponent<Renderer>();
+        mRenderer = GetComponent<Renderer>();
     }
 
     private IEnumerator ChangeSprite(float waitTime)
@@ -23,7 +23,7 @@ public class EinfacheAnimation : MonoBehaviour
         {
             yield return new WaitForSeconds(waitTime);
             //print("WaitAndPrint " + Time.time);
-            renderer.material.mainTexture = textures[counter % textures.Length ];
+            mRenderer.material.mainTexture = textures[counter % textures.Length ];
             counter++;
         }
     }

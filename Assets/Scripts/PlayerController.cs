@@ -37,7 +37,6 @@ public class PlayerController : MonoBehaviour
 			if (Input.GetButton("Jump"))
 			{
 				moveDirection.y = jumpSpeed;
-				Debug.Log ("huhu");
 			}
 		}
 
