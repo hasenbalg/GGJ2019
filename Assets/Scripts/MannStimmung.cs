@@ -9,6 +9,9 @@ public class MannStimmung : Stimmung
     public Texture rot;
     public GameObject sprite;
     private EinfacheAnimation ea;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
