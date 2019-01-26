@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8500267896521680488}
   - component: {fileID: 1899128821052951785}
   - component: {fileID: 3237727729616732814}
+  - component: {fileID: 3212976205188107453}
   m_Layer: 0
   m_Name: Mann
   m_TagString: Family
@@ -116,6 +117,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
   speed: 2.65
+--- !u!114 &3212976205188107453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146121479911411530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a3bf93c60eef840be215dd9496ec3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stimmung: 1000
+  minStimmung: 0
 --- !u!1 &1354513590217653163
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,10 +6,12 @@ public class Move : MonoBehaviour
 {
     public Vector3 target;
     public float speed;
+    private float initialY;
     // Start is called before the first frame update
     void Start()
     {
         target = FindTarget();
+        initialY = transform.position.y;
     }
 
     // Update is called once per frame
@@ -28,7 +30,7 @@ public class Move : MonoBehaviour
     }
 
     Vector3 FindTarget() {
-        Vector3 newTarget = new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
+        Vector3 newTarget = new Vector3(Random.Range(-10.0f, 10.0f), initialY, Random.Range(-10.0f, 10.0f));
         return newTarget;
     }
 }

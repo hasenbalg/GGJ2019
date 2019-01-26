@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1550678585121195585}
   - component: {fileID: 8802592172234894528}
   - component: {fileID: 5520464675899990695}
+  - component: {fileID: 2390904091917982317}
   m_Layer: 0
   m_Name: Baby
   m_TagString: Untagged
@@ -116,6 +117,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
   speed: 3.43
+--- !u!114 &2390904091917982317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8040559215018782563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a3bf93c60eef840be215dd9496ec3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stimmung: 1000
+  minStimmung: 0
 --- !u!1 &8268093827093109634
 GameObject:
   m_ObjectHideFlags: 0
