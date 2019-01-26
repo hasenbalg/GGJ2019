@@ -10,7 +10,12 @@ public class PlayerShoot : MonoBehaviour
     public float fireRate;
 
     private float nextFire;
+    private AudioSource audioSource;
 
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void Update()
     {
         if (Input.GetButton("Fire1") && Time.time > nextFire)
@@ -19,6 +24,7 @@ public class PlayerShoot : MonoBehaviour
             GameObject bu = Instantiate(projectil, transform.position, transform.rotation);
             Rigidbody rb = bu.GetComponent<Rigidbody>();
             rb.AddForce(bu.transform.forward * speed, ForceMode.Impulse);
+            audioSource.Play();
         }
     }
 
