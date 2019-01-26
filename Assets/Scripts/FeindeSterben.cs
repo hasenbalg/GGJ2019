@@ -5,7 +5,18 @@ using UnityEngine;
 public class FeindeSterben : MonoBehaviour
 {
     public float lebenspunkte = 50;
-    
+
+    public float schwellenwertVorSprite = 10;
+
+    public Texture sterbeSprite;
+    public GameObject sprite;
+    private EinfacheAnimation ea;
+
+    void Start()
+    {
+        ea = sprite.GetComponent<EinfacheAnimation>();
+    }
+
     // Start is called before the first frame update
     public void nimmSchaden(float schaden)
     {
@@ -15,6 +26,11 @@ public class FeindeSterben : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (lebenspunkte <= schwellenwertVorSprite && sterbeSprite != null && ea != null)
+        {
+            ea.enabled = false;
+            sprite.GetComponent<Renderer>().material.mainTexture = sterbeSprite;
+        }
         if (lebenspunkte <= 0)
         {
             Destroy(gameObject);
