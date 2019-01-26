@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Stimmung : MonoBehaviour
 {
@@ -10,9 +8,9 @@ public class Stimmung : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    public void nimmSchaden(float schaden)
     {
-        
+        stimmung -= schaden;
     }
 
     // Update is called once per frame
@@ -27,9 +25,7 @@ public class Stimmung : MonoBehaviour
     {
         foreach (ContactPoint contact in collision.contacts)
         {
-            print(contact.thisCollider.name + " hit " + contact.otherCollider.name);
-            // Visualize the contact point
-            Debug.DrawRay(contact.point, contact.normal, Color.white);
+           // hier muessen die verschiedenen Arten der Munition abgefragt und verrechnet werden
             if (contact.otherCollider.CompareTag("Projektile")) {
                 stimmung++;
             }
