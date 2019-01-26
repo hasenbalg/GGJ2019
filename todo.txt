@@ -1,0 +1,3 @@
+﻿intensitaet der schuesse nehmen mit zunehmender distanz ab
+lebenszeit fuer kugeln
+pudel einbaun
