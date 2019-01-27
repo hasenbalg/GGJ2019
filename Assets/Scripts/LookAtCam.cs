@@ -5,14 +5,15 @@ using UnityEngine;
 public class LookAtCam : MonoBehaviour
 {
 
-    public GameObject cam;
-    // Start is called before the first frame update
+    public Camera cam;
+    
+
     void Start()
     {
-        
+        cam = Camera.main;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         transform.LookAt(cam.transform);

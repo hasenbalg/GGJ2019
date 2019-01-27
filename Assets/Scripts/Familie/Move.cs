@@ -12,6 +12,7 @@ public class Move : MonoBehaviour
     {
         target = FindTarget();
         initialY = transform.position.y;
+        //Debug.Log(initialY);
     }
 
     // Update is called once per frame

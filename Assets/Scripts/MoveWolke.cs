@@ -21,14 +21,15 @@ public class MoveWolke : MonoBehaviour
 
     void Update()
     {
-        float step = speed * Time.deltaTime; 
+        float step = speed * Time.deltaTime;
         GameObject target = FindClosestEnemy();
 
-        if (target != null) {
+        if (target != null)
+        {
             //wolke oben halten
             Vector3 targetPos = target.transform.position;
             targetPos.y = flightHeight;
-            //target.transform.position = targetPos;
+            
 
             transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
 
@@ -36,17 +37,23 @@ public class MoveWolke : MonoBehaviour
             {
                 // DONNERN mit PFEILEN
                 // FAMILIENMITGLIED AERGERN
+
+                foreach (GameObject go in GameObject.FindGameObjectsWithTag("Family")) {
+                    go.GetComponent<DonnernBlitzen>().enabled = false;
+                }
                 if (target.CompareTag("Family"))
                 {
                     target.GetComponent<Stimmung>().nimmSchaden(machtSchaden);
+                    target.GetComponent<DonnernBlitzen>().enabled = true;
                 }
+                
                 target = FindClosestEnemy();
             }
         }
-       
+
     }
 
-   
+
     public GameObject FindClosestEnemy()
     {
         GameObject[] gos;
