@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Family
   - Projektile
+  - Feinde
   layers:
   - Default
   - TransparentFX

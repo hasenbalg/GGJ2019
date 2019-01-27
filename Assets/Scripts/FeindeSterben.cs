@@ -44,8 +44,14 @@ public class FeindeSterben : MonoBehaviour
             // hier muessen die verschiedenen Arten der Munition abgefragt und verrechnet werden
             if (contact.otherCollider.CompareTag("Projektile"))
             {
-                lebenspunkte--;
+                if (contact.otherCollider.name.Contains("Wecker")) {
+                    lebenspunkte--;
+                }
+                
+
             }
+
+
         }
     }
 }

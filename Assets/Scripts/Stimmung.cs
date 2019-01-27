@@ -27,8 +27,23 @@ public class Stimmung : MonoBehaviour
         {
            // hier muessen die verschiedenen Arten der Munition abgefragt und verrechnet werden
             if (contact.otherCollider.CompareTag("Projektile")) {
-                stimmung++;
+                if (contact.otherCollider.name.Contains("Herz"))
+                {
+                    stimmung++;
+                }else if (contact.otherCollider.name.Contains("Beer") && gameObject.name.Contains("Mann"))
+                {
+                    stimmung+=2;
+                }
+                else if (contact.otherCollider.name.Contains("Beer") && gameObject.name.Contains("Baby"))
+                {
+                    stimmung -= 2;
+                }
+                else if (contact.otherCollider.name.Contains("Wecker") && gameObject.name.Contains("Pudel"))
+                {
+                    stimmung += 2;
+                }
             }
+           
         }
     }
 }
