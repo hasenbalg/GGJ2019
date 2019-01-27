@@ -120,9 +120,11 @@ GameObject:
   - component: {fileID: 5995724677970941377}
   - component: {fileID: 5995724677970941378}
   - component: {fileID: 435883572871839462}
+  - component: {fileID: 4479103210097859946}
+  - component: {fileID: 6637132034740298803}
   m_Layer: 0
   m_Name: Trockner
-  m_TagString: Untagged
+  m_TagString: Feinde
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,4 +223,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02129fdd1fb5134abf5b905ffbc3d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 2
+  speed: 2
+--- !u!114 &4479103210097859946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5995724677970941380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f2c092711bb5a408d9bf7532bd6b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &6637132034740298803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5995724677970941380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d8da50348a0154682291053473e28f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lebenspunkte: 50
+  schwellenwertVorSprite: 10
+  sterbeSprite: {fileID: 2800000, guid: 8b6eb9347d6b7004985c72c8893dbebc, type: 3}
+  sprite: {fileID: 5995724677569396426}

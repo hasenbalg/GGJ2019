@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5873995489107880018}
   - component: {fileID: 9172006689495606214}
   - component: {fileID: 4882867664532862847}
+  - component: {fileID: 7555727751714882352}
   m_Layer: 0
   m_Name: Staubsauger
   m_TagString: Feinde
@@ -146,7 +147,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02129fdd1fb5134abf5b905ffbc3d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 2
+  speed: 2
+--- !u!114 &7555727751714882352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6771867286405332761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d8da50348a0154682291053473e28f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lebenspunkte: 50
+  schwellenwertVorSprite: 10
+  sterbeSprite: {fileID: 2800000, guid: 07dff874d2b9912449843bc0feab76d7, type: 3}
+  sprite: {fileID: 6771867286808974359}
 --- !u!1 &6771867286808974359
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +224,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 737a73b9bdcdc794f879540c8d5692cf, type: 2}
+  - {fileID: 2100000, guid: 4bd1c4c7b0dfb894397a552598d8b3cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

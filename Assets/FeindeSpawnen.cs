@@ -24,10 +24,12 @@ public class FeindeSpawnen : MonoBehaviour
     }
     private void Update()
     {
-        /*
           if (GameObject.FindGameObjectsWithTag("Feinde").Length < maxNum) {
-            GameObject go = feinde[Random.Range(0, feinde.Length) % feinde.Length];
-            Debug.Log("Pop");
+            int index = Random.Range(0, feinde.Length);
+            GameObject go = feinde[index];
+            Debug.Log("index: " + index);
+            Debug.Log("length: " + feinde.Length);
+            Debug.Log("pop");
             Instantiate(
                 go, new Vector3(
                 Random.Range(-10.0f, 10.0f),
@@ -37,6 +39,5 @@ public class FeindeSpawnen : MonoBehaviour
                 Quaternion.identity
                 );
         }
-        */
     }
 }
