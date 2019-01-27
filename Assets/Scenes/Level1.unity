@@ -896,6 +896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 886417887}
   haus: {fileID: 1112609905}
+  gameOver: 0
 --- !u!4 &1468945559
 Transform:
   m_ObjectHideFlags: 0
@@ -1082,7 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f2c092711bb5a408d9bf7532bd6b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 2029581792}
+  player: {fileID: 0}
 --- !u!1 &1812473841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,7 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f2c092711bb5a408d9bf7532bd6b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 2029581792}
+  player: {fileID: 0}
 --- !u!1 &2029581792 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5961948593758672852, guid: 882b9f591e53cf349b94e1f0ce915e61,
@@ -1483,6 +1484,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.441
       objectReference: {fileID: 0}
+    - target: {fileID: 4882867664532862847, guid: 8d8d4c70abade3140bf8bec8e645ee44,
+        type: 3}
+      propertyPath: force
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9172006689495606214, guid: 8d8d4c70abade3140bf8bec8e645ee44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8d8d4c70abade3140bf8bec8e645ee44, type: 3}
@@ -1540,7 +1546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f2c092711bb5a408d9bf7532bd6b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 2029581792}
+  player: {fileID: 0}
 --- !u!1001 &334233373521709429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2135,6 +2141,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.339
       objectReference: {fileID: 0}
+    - target: {fileID: 435883572871839462, guid: e156a966ba26c77478c90b6671ad5428,
+        type: 3}
+      propertyPath: force
+      value: 0.04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e156a966ba26c77478c90b6671ad5428, type: 3}
 --- !u!1001 &6139906539875951895
@@ -2251,7 +2262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f2c092711bb5a408d9bf7532bd6b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 2029581792}
+  player: {fileID: 0}
 --- !u!114 &6770609680756727784
 MonoBehaviour:
   m_ObjectHideFlags: 0

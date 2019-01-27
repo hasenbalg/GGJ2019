@@ -10,15 +10,12 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = FindTarget();
         initialY = transform.position.y;
-        //Debug.Log(initialY);
+        target = FindTarget();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Move our position a step closer to the target.
         float step = speed * Time.deltaTime; // calculate distance to move
         transform.position = Vector3.MoveTowards(transform.position, target, step);
 

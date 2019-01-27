@@ -5,18 +5,18 @@ using UnityEngine;
 public class LookAtCam : MonoBehaviour
 {
 
-    public Camera cam;
+    public GameObject player;
     
 
     void Start()
     {
-        cam = Camera.main;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     
     void Update()
     {
-        transform.LookAt(cam.transform);
+        transform.LookAt(player.transform);
         Vector3 rotation = transform.eulerAngles;
         rotation.x = 0;
         rotation.y += 180;

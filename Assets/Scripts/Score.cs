@@ -11,7 +11,7 @@ public class Score : MonoBehaviour
 
     public Image haus;
     private float stimmungInitTotal;
-    private bool gameOver;
+    public bool gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -51,11 +51,11 @@ public class Score : MonoBehaviour
 
             gameOver = true;
         } else if (gameOver) {
-            haus.transform.position = Vector2.MoveTowards(haus.transform.position, Vector2.zero, .01f * Time.deltaTime);
+            //haus.transform.position = Vector2.MoveTowards(haus.transform.position, Vector2.zero, .01f * Time.deltaTime);
 
-            if (Vector2.Distance(haus.transform.position, Vector2.zero) < .01f) {
+            //if (Vector2.Distance(haus.transform.position, Vector2.zero) > .1f) {
                 SceneManager.LoadScene(2);
-            }
+           // }
         }
 
     }

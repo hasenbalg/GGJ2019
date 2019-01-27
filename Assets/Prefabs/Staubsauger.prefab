@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6771867286405332767}
   - component: {fileID: 5873995489107880018}
   - component: {fileID: 9172006689495606214}
+  - component: {fileID: 4882867664532862847}
   m_Layer: 0
   m_Name: Staubsauger
   m_TagString: Feinde
@@ -133,6 +134,19 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 09a5ded44f62e9a448cd91e3cdbb7265, type: 3}
   - {fileID: 2800000, guid: 16c07c060b89f1f45be500068a20cd66, type: 3}
   interval: 0.35
+--- !u!114 &4882867664532862847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6771867286405332761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02129fdd1fb5134abf5b905ffbc3d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 2
 --- !u!1 &6771867286808974359
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,4 +267,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f2c092711bb5a408d9bf7532bd6b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  player: {fileID: 0}
