@@ -10,8 +10,8 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = FindTarget();
         initialY = transform.position.y;
+        target = FindTarget();
         //Debug.Log(initialY);
     }
 
