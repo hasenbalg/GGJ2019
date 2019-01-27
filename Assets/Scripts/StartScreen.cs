@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class StartScreen : MonoBehaviour {
-
+    public int sceneIndex;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,7 +19,7 @@ public class StartScreen : MonoBehaviour {
     }
 
 	public void startGame () {
-		SceneManager.LoadScene(1);
+		SceneManager.LoadScene(sceneIndex);
 	}
 
 }

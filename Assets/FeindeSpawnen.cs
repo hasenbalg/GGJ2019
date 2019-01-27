@@ -22,4 +22,21 @@ public class FeindeSpawnen : MonoBehaviour
                 );
         }
     }
+    private void Update()
+    {
+        /*
+          if (GameObject.FindGameObjectsWithTag("Feinde").Length < maxNum) {
+            GameObject go = feinde[Random.Range(0, feinde.Length) % feinde.Length];
+            Debug.Log("Pop");
+            Instantiate(
+                go, new Vector3(
+                Random.Range(-10.0f, 10.0f),
+                go.transform.position.y,
+                Random.Range(-10.0f, 10.0f)
+                ),
+                Quaternion.identity
+                );
+        }
+        */
+    }
 }

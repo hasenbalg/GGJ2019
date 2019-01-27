@@ -242,7 +242,7 @@ PrefabInstance:
     - target: {fileID: 356623548151668859, guid: 0cc408bc2c8cdcca3a3f05f60dbbe143,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -63.99
+      value: -63.990005
       objectReference: {fileID: 0}
     - target: {fileID: 356623548151668859, guid: 0cc408bc2c8cdcca3a3f05f60dbbe143,
         type: 3}
@@ -903,12 +903,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468945557}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.268216, y: 1.3019724, z: -3.0185547}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.1857924, y: 2.1857924, z: 2.1857924}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 765240984}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1468945560
 MonoBehaviour:
@@ -2069,6 +2069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trockner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995724677970941380, guid: e156a966ba26c77478c90b6671ad5428,
+        type: 3}
+      propertyPath: m_TagString
+      value: Feinde
       objectReference: {fileID: 0}
     - target: {fileID: 5995724677970941391, guid: e156a966ba26c77478c90b6671ad5428,
         type: 3}
